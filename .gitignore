@@ -1,0 +1,9 @@
+*.egg-info
+*.pyc
+*.pyo
+.DS_Store
+build
+dist
+docs/.build
+docs/_build
+MANIFEST

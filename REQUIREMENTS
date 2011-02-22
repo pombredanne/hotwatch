@@ -1,0 +1,3 @@
+argparse>=1.0.1
+hotqueue>=0.2.2
+redis>=2.0.0
