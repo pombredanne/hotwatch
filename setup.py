@@ -38,10 +38,10 @@ setup(
     license          = 'MIT',
     long_description = get_long_description(),
     install_requires = get_requirements(),
-    packages		 = ['hotwatch'],
+    packages         = ['hotwatch'],
     url              = 'http://github.com/richardhenry/hotwatch',
     version          = get_version(),
-    classifiers = [
+    classifiers      = [
         'Programming Language :: Python',
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -50,7 +50,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     entry_points     = {
-		'console_scripts': ['hotwatch = hotwatch.cli:main'],
-	},
+        'console_scripts': ['hotwatch = hotwatch.cli:main'],
+    },
 )
 
