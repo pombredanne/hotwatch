@@ -19,9 +19,12 @@ parser = argparse.ArgumentParser(prog='hotwatch', description="Command line "
 parser.add_argument('--version', action='version', version=__version__)
 
 # Add Redis-related arguments (host, port, db to connect to):
-parser.add_argument('--host', help="Redis server host (eg. localhost, 1.2.3.4)")
-parser.add_argument('--port', help="Redis server port")
-parser.add_argument('--db', help="Redis database ID")
+parser.add_argument('--host',
+    help="Server hostname (example: 127.0.0.1)")
+parser.add_argument('--port', type=int,
+    help="Server port (example: 6379)")
+parser.add_argument('--db', type=int,
+    help="Database number (example: 1)")
 
 # Add queue name positional args:
 parser.add_argument('queue_names', nargs='+', metavar='QUEUE_NAME')
